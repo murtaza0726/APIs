@@ -1,0 +1,17 @@
+environments:
+  - name: Test
+    endpoints:https://54.78.83.162:9443/publisher/
+      production:
+      sandbox:
+      config:
+        retryTimeOut: $RETRY
+  - name: prod
+    endpoints:https://54.73.215.61:9443/publisher/
+      production:
+      sandbox:
+      config:
+        retryTimeOut: $RETRY
+deploy:
+  import:
+    update: true
+    preserveProvider: true
